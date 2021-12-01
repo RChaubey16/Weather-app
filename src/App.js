@@ -1,10 +1,12 @@
 
 import React from 'react';
+import Weather from './Weather';
+// key = 43fab9d64bf617e959ae5a762f12ed64
 
 function App() {
   return (
     <div className="App">
-     Hello
+     <Weather />
     </div>
   );
 }
