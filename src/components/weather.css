@@ -1,11 +1,11 @@
-.weather{
+.app{
     background-image: url('../assets/images/cold.jpg');
     background-size: cover;
     background-position: bottom;
     transition: 0.4s ease-out;
 }
 
-.weather.warm{
+.app.warm{
     background-image: url('../assets/images/warm.jpg');
 }
 
@@ -15,12 +15,12 @@ main{
     padding: 25px;
 }
 
-.weather__searchBox{
+.app__searchBox{
     width: 100%;
     margin: 0 0 75px;
 }
 
-.weather__searchBox .searchBar{
+.app__searchBox .searchBar{
     display: block;
     width: 100%;
     padding: 15px;
@@ -37,6 +37,6 @@ main{
     transition: 0.4s ease;
 }
 
-.weather__searchBox .searchBar:focus{
+.app__searchBox .searchBar:focus{
     background-color: rgba(255, 255, 255, 0.75);
 }

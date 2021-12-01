@@ -27,9 +27,9 @@ function Weather() {
     }
  
   return (
-    <div className="weather">
+    <div className="app">
       <main>
-        <div className="weather__searchBox">
+        <div className="app__searchBox">
           <input type="text" className="searchBar" placeholder="Search..." />
         </div>
 
@@ -38,6 +38,16 @@ function Weather() {
                 New York City, US
             </div>
             <div className="date">{datebuilder(new Date())}</div>
+        </div>
+
+        <div className="weather__box">
+          <div className="temp">
+            15 C
+          </div>
+
+          <div className="weather">
+            Sunny
+          </div>
         </div>
       </main>
     </div>
