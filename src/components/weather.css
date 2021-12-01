@@ -40,3 +40,50 @@ main{
 .app__searchBox .searchBar:focus{
     background-color: rgba(255, 255, 255, 0.75);
 }
+
+/* location */
+
+.weather__locationBox .location{
+    color: #FFF;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.weather__locationBox .date{
+    color: #FFF;
+    font-size: 1.1rem;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+}
+
+/* Weather Box */
+.weather__box{
+    text-align: center;
+
+}
+
+.weather__box .temp{
+    position: relative;
+    display: inline-block;
+    margin: 30px auto;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius:16px;
+    padding: 15px 25px;
+    color: #FFF;
+    font-size: 102px;
+    font-weight: 900;
+    text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+    text-align: center;
+    box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.weather__box .weather{
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 700;
+    text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
