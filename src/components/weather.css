@@ -1,12 +1,12 @@
 .weather{
-    background-image: url('./assets/images/cold.jpg');
+    background-image: url('../assets/images/cold.jpg');
     background-size: cover;
     background-position: bottom;
     transition: 0.4s ease-out;
 }
 
 .weather.warm{
-    background-image: url('./assets/images/warm.jpg');
+    background-image: url('../assets/images/warm.jpg');
 }
 
 main{
