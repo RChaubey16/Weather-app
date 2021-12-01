@@ -16,7 +16,7 @@ function Weather() {
         .then((res) => res.json())
         .then((result) => {
           setWeather(result);
-          setQuery('');
+          setQuery("");
           console.log(result);
         });
     }
@@ -61,21 +61,35 @@ function Weather() {
   };
 
   return (
-    <div className="app">
+    <div
+      className={
+        typeof weather.main != "undefined"
+          ? weather.main.temp > 16
+            ? "app warm"
+            : "app"
+          : "app"
+      }
+    >
       <main>
         <div className="app__searchBox">
-          <input type="text" className="searchBar" placeholder="Search..." 
-          onChange={e => setQuery(e.target.value)}
-          value={query}
-          onKeyPress={search}/>
+          <input
+            type="text"
+            className="searchBar"
+            placeholder="Search..."
+            onChange={(e) => setQuery(e.target.value)}
+            value={query}
+            onKeyPress={search}
+          />
         </div>
 
-        {(typeof weather.main != 'undefined') ? (
+        {typeof weather.main != "undefined" ? (
           <div>
-             <div className="weather__locationBox">
-                <div className="location">{weather.name}, {weather.sys.country}</div>
-                <div className="date">{datebuilder(new Date())}</div>
+            <div className="weather__locationBox">
+              <div className="location">
+                {weather.name}, {weather.sys.country}
               </div>
+              <div className="date">{datebuilder(new Date())}</div>
+            </div>
 
             <div className="weather__box">
               <div className="temp">{Math.round(weather.main.temp)}°C</div>
@@ -83,7 +97,9 @@ function Weather() {
               <div className="weather">{weather.weather[0].main}</div>
             </div>
           </div>
-        ) : ('')}
+        ) : (
+          ""
+        )}
       </main>
     </div>
   );
